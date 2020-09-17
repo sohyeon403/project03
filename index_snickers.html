@@ -35,6 +35,8 @@
         
         
         .gnb{
+            position: absolute;
+            right:0px;
             width:750px;
             margin:0px auto;
             margin-top: -50px;
@@ -128,7 +130,7 @@
         }
         #brand_story{
             width:1200px;
-            height: 1200px;
+            height: 900px;
             margin: 0px auto;
         }
         #brand_story > img{
@@ -177,17 +179,80 @@
         }
         
         
-        article:nth-child(3)>img{
-            
+        article:nth-child(3)>img{ 
         }
         
+        #product{
+            width:1200px;
+            height: 800px;
+        }
+        #product li{text-align: center;}
+        
+        input[type=radio]{display: none;}
+        
+        #product label{
+            font-size: 20px;
+            padding:20px;
+            cursor: pointer;
+        }
+        
+        .almond01, .dark02, .hazelnut03, .peanut04{
+            display: none;
+        }
+        
+        
+        #almond:checked ~ .almond01{display:block;}
+        #dark:checked ~ .dark02{display:block;}
+        #hazelnut:checked ~ .hazelnut03{display:block;}
+        #peanut:checked ~ .peanut04{display:block;}
+        
+        
+        
+        #cf{
+            clear: both;
+            width:100%;
+            height: 500px;
+            background-color:#000;
+            text-align: center;
+        }
+        #cf > div{
+            width:1200px;
+            margin: 0px auto;
+        }
+        
+        #news{
+            width:1200px;
+            margin:0px auto;
+        }
+
+        article>h3{
+            color:#5b503c;
+            font-weight: bold;
+            font-size: 24px;
+            padding:10px;
+        }
+        
+        article>div>h3{
+            color:#ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            padding:10px;
+        }
+        
+        
+        #news img{
+            width:1200px;
+            height: 320px;
+        }
         
         /*        푸터영역서식*/
         footer{
             width:100%;
             height:80px;
-            background-color: #222;
+            background-image: url(./img/f_bg.png);
+            padding:30px;
         }
+        
         
         footer address{
             font-style: normal;
@@ -212,7 +277,7 @@
         
     
         
-        /*헤더 내비게이션 추가 서식*/
+/*헤더 내비게이션 추가 서식*/
         .act{
             width:100%;
             position:fixed;
@@ -234,6 +299,17 @@
         
 /*        h3{display: none;}*/
         
+        
+        iframe{
+            display: inline-block;
+            margin: 0px auto;
+            width:856px;
+            height:438px;
+            text-align: center;
+        }
+        
+        
+        
     </style>
     
     
@@ -252,7 +328,7 @@
         const title = $('.visual img:last-child');
         
         chocolate.animate({'left':'10%', 'opacity':'1'}, 700);
-        title.animate({'right':'10%', 'opacity':'1'}, 700);
+        title.animate({'right':'25%', 'opacity':'1'}, 700);
         
         
         //내비게이션 메뉴 클릭시 해당하는 컨텐츠 top:58px위치에 올라오게 하기
@@ -345,11 +421,9 @@
                     
                     return false; //새로고침 방지
             });
-            
-            
-        
         
     });
+        
         
     </script>
     
@@ -396,7 +470,7 @@
        
 <!--    브랜드스토리   -->
        <article class="sub_con" id="brand_story">
-       <h3><img src="./img/title_brand_story.png"alt=""></h3>
+       <h3>브랜드스토리</h3>
         
         <div class="wrap_img">
         <img src="./img/story_birthofsnickers.png" alt="" id="br_01">
@@ -413,12 +487,48 @@
        <h3>제품소개</h3> 
        
        
-       <div class="product_wrap">
-       <img src="./img/p_snickers_almond.png" alt="">
-       <img src="./img/p_snickers_dark.png" alt="">
-       <img src="./img/p_snickers_hazelnut.png" alt="">
-       <img src="./img/p_snickers_peanut.png" alt="">
+       <input type="radio" name="a" id="almond" checked>
+       <label for="almond">스니커즈 아몬드</label>
+       
+       <input type="radio" name="a" id="dark">
+       <label for="dark">스니커즈 다크</label>
+       
+       <input type="radio" name="a" id="hazelnut">
+       <label for="hazelnut">스니커즈 헤이즐넛</label>
+
+       <input type="radio" name="a" id="peanut">
+       <label for="peanut">스니커즈 피넛</label>       
+       
+       
+       
+       <ul class="almond01">
+           <li><img src="./img/p_snickers_almond.png" alt=""></li>
+           <li><img src="./img/p_snickers_almond_01.png" lat=""></li>
+       </ul>
+       
+       <ul class="dark02">
+           <li><img src="./img/p_snickers_dark.png" alt=""></li>
+           <li><img src="./img/p_snickers_dark_01.png" alt=""></li>
+       </ul>
+       
+       <ul class="hazelnut03">
+           <li><img src="./img/p_snickers_hazelnut.png" alt=""></li>
+           <li><img src="./img/p_snickers_hazelnut_01.png" alt=""></li>
+       </ul>
+       
+       <ul class="peanut04">
+          <li><img src="./img/p_snickers_peanut.png" alt=""></li>
+          <li><img src="./img/p_snickers_peanut_01.png" alt=""></li>
+       </ul>
+<!--
+       <div class="product_wrap">       
+       <div class="almond01"><img src="./img/p_snickers_almond.png" alt=""></div>
+       <div class="dark02"><img src="./img/p_snickers_dark.png" alt=""></div>
+       <div class="hazelnut03"><img src="./img/p_snickers_hazelnut.png" alt=""></div>
+       <div class="peanut04"><img src="./img/p_snickers_peanut.png" alt=""></div>
        </div>
+-->
+       
        
        </article>
        
@@ -427,7 +537,10 @@
        
        
        <article class="sub_con" id="cf">
+       <div>
        <h3>CF보기</h3>
+       <iframe src="https://www.youtube.com/embed/10LorZpmw00" frameborder="0"></iframe>
+       </div>
        </article>
        
        
@@ -435,6 +548,8 @@
        
        <article class="sub_con" id="news">
        <h3>공지사항</h3>
+       <img src="./img/news.jpg" alt="">
+       
        </article>
        
        
@@ -446,11 +561,9 @@
 <!--    푸터영역시작-->
     <footer>
         <a href="#" title="페이지 상단으로 바로가기">top</a>
-        <address>Copyright&copy;snickers</address>
+        
+        <address>Copyright&copy;snickers. Other trademarks are property of their respective owners.</address>
     </footer>
-    
-    
-    
     
     
 </body>

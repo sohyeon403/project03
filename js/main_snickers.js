@@ -30,7 +30,7 @@
                 $('.status').text(sPos); //세로스크롤값 표시하기
                 
                 if(sPos >= 700){ //스크롤 높이가 700픽셀 이상이면
-                    $('footer a').fadeIn(); //탑버튼 나오게 하고
+                    $('fooeter a').fadeIn(); //탑버튼 나오게 하고
                     
                 }else{ //그렇지 않으면
                     $('footer a').fadeOut(); //탑버튼 사라지게 함.
@@ -102,5 +102,7 @@
                     return false; //새로고침 방지
             });
         
+     
+     
     });
         

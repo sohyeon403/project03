@@ -306,3 +306,13 @@
             text-align: center;
         }
         
+
+        #news figure img{
+            width: 300px;
+            height: 200px;
+            float: left;
+        }
+
+        #news figure figcaption{
+            float: left;
+        }

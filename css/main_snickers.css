@@ -305,14 +305,36 @@
             height:438px;
             text-align: center;
         }
+
+
+
+
+        #news{
+            width:800px;
+        }
         
+
+
+
 
         #news figure img{
             width: 300px;
             height: 200px;
             float: left;
+            padding:20px;
         }
+
+
+
 
         #news figure figcaption{
             float: left;
+            padding:20px;
         }
+
+
+
+
+
+
+

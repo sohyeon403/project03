@@ -35,7 +35,7 @@ header {
 }
 
 header img {
-    padding: 4px 0px;
+    padding: 14px 0px;
 }
 
 #header_top,
@@ -47,7 +47,7 @@ nav {
 }
 
 .gnb {
-    width: 780px;
+    width: 598px;
     height: 58px;
     margin: 0px auto;
     background: #421100;
@@ -90,7 +90,7 @@ section {
 
 section #visual {
     width: 100%;
-    height: 510px;
+    height: 470px;
     background-image: url(../img/h_bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -107,7 +107,7 @@ section #visual {
 /*카피문구 이미지*/
 #visual img:first-child {
     top: 10%;
-    right: 10%;
+    right: 0%;
     width: 610px;
 }
 
@@ -132,7 +132,7 @@ article.sub_con>h3 {
     text-align: center;
     font-size: 60px;
     letter-spacing: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #story img {
@@ -161,87 +161,128 @@ article.sub_con>h3 {
 
 
 
- 
-        #product{
-            width:1200px;
-            margin:0px auto;
-        }
-        
-        
-        .wrap_img{
-            width: 890px;
-            margin: 0px auto;
-            background-color:#ccc;
-            position: relative;
-        }
 
-        .img_sub{
-            position: absolute;
-            width: 440px;
-            height: 356px;
-            background: rgba(0,0,0,.5);
-            border-radius: 7px;
-        }
-        .img_sub>p{
-            color:#fff;
-            font-size: 14px;
-        }
+#product {
+    width: 1200px;
+    margin: 0px auto;
+}
 
 
-        .product_wrap{
-            width:1200px;
-            margin:0px auto;
-            text-align: center;
-        }
-        
-        
-        
+.wrap_img {
+    width: 890px;
+    margin: 0px auto;
+    background-color: #ccc;
+    position: relative;
+}
+
+.img_sub {
+    position: absolute;
+    width: 440px;
+    height: 356px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 7px;
+    opacity: 0;
+}
+
+
+.story:hover .img_sub {
+    opacity: 1;
+}
+
+
+.img_sub>p {
+    color: #fff;
+    font-size: 14px;
+}
+.sub01{z-index: 100;}
+.sub02 {
+    right: 0px;
+}
+
+.sub03 {
+    top: 365px;
+}
+
+
+.product_wrap {
+    width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+
 /*        제품소개*/
-        article:nth-child(3){
-            width:1200px;
-            margin:0px auto;
-        }
-        
-        
-        article:nth-child(3)>img{ 
-        }
-        
-        #product{
-            width:1200px;
-            height: 800px;
-        }
-        #product li{text-align: center;}
-        
-        input[type=radio]{display: none;}
-        
-        #product label{
-            font-size: 20px;
-            padding:20px;
-            cursor: pointer;
-        }
-        
-        .almond01, .dark02, .hazelnut03, .peanut04{
-            display: none;
-        }
-        
-        
-        #almond:checked ~ .almond01{display:block;}
-        #dark:checked ~ .dark02{display:block;}
-        #hazelnut:checked ~ .hazelnut03{display:block;}
-        #peanut:checked ~ .peanut04{display:block;}
-        
-        input[type=radio]:checked + label{
-            font-weight: bold;
-            background-color:#333;
-            color:#fff;
-            border-radius: 50px;
-        }
+article:nth-child(3) {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+
+article:nth-child(3)>img {}
+
+#product {
+    width: 1200px;
+    height: 800px;
+}
+
+#product li {
+    text-align: center;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+#product label {
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.almond01,
+.dark02,
+.hazelnut03,
+.peanut04 {
+    display: none;
+}
+
+
+#almond:checked~.almond01 {
+    display: block;
+}
+
+#dark:checked~.dark02 {
+    display: block;
+}
+
+#hazelnut:checked~.hazelnut03 {
+    display: block;
+}
+
+#peanut:checked~.peanut04 {
+    display: block;
+}
+
+input[type=radio]:checked+label {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50px;
+}
 
 
 
 
+.cfimg_wrap {
+    width: 1000px;
+    margin: 0px auto;
+}
 
-
+.cfimg_wrap>img {
+    width: 300px;
+    padding: 15px;
+}
 
 
 
@@ -253,7 +294,7 @@ article:not(#visual) {
     /*article 영역*/
     width: 1200px;
     margin: 30px auto;
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 940px;
 }
 

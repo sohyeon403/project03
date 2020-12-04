@@ -46,23 +46,23 @@ $(document).ready(function(){
         
         
 //                //각 해당하는 콘텐츠가 상단으로 올라오면 해당하는 메뉴에 서식을 적용하기
-               if(sPos >= 176&&sPos<1500){
+               if(sPos >= 500&&sPos<1400){
                    $('.gnb a').removeClass('on'); //기존에 적용된 서식이 있으면 제거하고
                    $('.gnb li:first-child a').addClass('on'); //첫번째 메뉴에 서식 적용
-               }else if(sPos >= 1546&&sPos<2400){
+               }else if(sPos >= 1500&&sPos<2300){
                    $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고
                    $('.gnb li:nth-child(2) a').addClass('on'); //두번째 메뉴에 서식 적용
-               }else if(sPos >=2520&&sPos<3400){
+               }else if(sPos >=2400&&sPos<3350){
                    $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고
                    $('.gnb li:nth-child(3) a').addClass('on'); //세번째 메뉴에 서식 적용
                    
-               }else if(sPos >=3492&&sPos<4359){
+               }else if(sPos >=3430&&sPos<4250){
                    $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고
                    $('.gnb li:nth-child(4) a').addClass('on'); //세번째 메뉴에 서식 적용
                    
-               }else if(sPos >=4460&&sPos<5200){
-                   $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고
-                   $('.gnb li:nth-child(5) a').addClass('on'); //세번째 메뉴에 서식 적용
+            //    }else if(sPos >=4370&&sPos<5200){
+            //        $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고
+            //        $('.gnb li:nth-child(5) a').addClass('on'); //세번째 메뉴에 서식 적용
 //                    
 //                }else if(sPos >=4626&&sPos<5300){
 //                    $('.gnb a').removeClass('.on'); //기존에 적용된 서식이 있으면 제거하고

@@ -25,8 +25,13 @@ body {
 /*상단헤더 서식*/
 header {
     width: 100%;
-    height: 100px;
+    height: 124px;
     background: #421100;
+}
+
+#header_top {
+    width: 1200px;
+    margin: 0px auto;
 }
 
 #header_top h1 {
@@ -38,16 +43,39 @@ header img {
     padding: 14px 0px;
 }
 
+ul.lnb {
+    margin-left: 840px;
+    margin-top: -60px;
+    /* transform: translate(840px,-60px); */
+
+}
+
+ul.lnb>li {
+    float: left;
+}
+
+ul.lnb>li>a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+ul.lnb>li>a:hover {
+    color: #ffff00;
+}
+
+
 #header_top,
 nav {
-    height: 58px;
+    height: 60px;
     width: 100%;
     background: #421100;
 
 }
 
 .gnb {
-    width: 598px;
+    width: 698px;
     height: 58px;
     margin: 0px auto;
     background: #421100;
@@ -55,14 +83,14 @@ nav {
 
 .gnb>li {
     float: left;
-    padding: 0px 30px;
+    padding: 0px 28px;
     text-align: center;
-    line-height: 58px;
+    line-height: 60px;
 }
 
 .gnb>li>a {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0px 10px;
 }
@@ -106,13 +134,14 @@ section #visual {
 
 /*카피문구 이미지*/
 #visual img:first-child {
-    top: 10%;
-    right: 0%;
-    width: 610px;
+    top: 35%;
+    right: 5%;
+    width: 700px;
 }
 
-/*자동차 사진*/
+/*초콜릿 사진*/
 #visual img:last-child {
+    width: 400px;
     left: 0%;
     bottom: 20%;
 }
@@ -128,11 +157,11 @@ section #visual {
 }
 */
 article.sub_con>h3 {
-    font-family: 'Nanum Pen Script', cursive;
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     letter-spacing: 20px;
-    padding-bottom: 50px;
+    padding: 50px 0px 30px 0px;
+    font-style: italic;
 }
 
 #story img {
@@ -165,6 +194,7 @@ article.sub_con>h3 {
 #product {
     width: 1200px;
     margin: 0px auto;
+    text-align: center;
 }
 
 
@@ -182,6 +212,7 @@ article.sub_con>h3 {
     background: rgba(0, 0, 0, .8);
     border-radius: 7px;
     opacity: 0;
+    transition: 0.3s;
 }
 
 
@@ -193,8 +224,14 @@ article.sub_con>h3 {
 .img_sub>p {
     color: #fff;
     font-size: 14px;
+    padding: 18px;
+    line-height: 22px;
 }
-.sub01{z-index: 100;}
+
+.sub01 {
+    z-index: 100;
+}
+
 .sub02 {
     right: 0px;
 }
@@ -236,7 +273,7 @@ input[type=radio] {
 
 #product label {
     font-size: 20px;
-    padding: 20px;
+    padding: 10px 26px;
     cursor: pointer;
 }
 
@@ -268,7 +305,7 @@ input[type=radio]:checked+label {
     font-weight: bold;
     background-color: #333;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 80px;
 }
 
 
@@ -296,6 +333,7 @@ article:not(#visual) {
     margin: 30px auto;
     /* background-color: aqua; */
     height: 940px;
+
 }
 
 
@@ -304,6 +342,9 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #222;
+    position: relative;
+    background: url(../img/f_bg.png) 0 0 repeat-x;
+    z-index: 20;
 }
 
 footer address {
@@ -317,13 +358,14 @@ footer address {
 
 /*        top버튼 서식*/
 footer>a {
-    background-color: #000;
+    background-color: #421100;
     color: #fff;
     font-size: 20px;
     padding: 12px 10px;
     position: fixed;
     bottom: 90px;
     right: 50px;
+    border-radius: 20px;
 }
 
 

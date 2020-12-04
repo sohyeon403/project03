@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: "맑은 고딕", arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+/*상단헤더 서식*/
+header {
+    width: 100%;
+    height: 100px;
+    background: #421100;
+}
+
+#header_top h1 {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header img {
+    padding: 4px 0px;
+}
+
+#header_top,
+nav {
+    height: 58px;
+    width: 100%;
+    background: #421100;
+
+}
+
+.gnb {
+    width: 780px;
+    height: 58px;
+    margin: 0px auto;
+    background: #421100;
+}
+
+.gnb>li {
+    float: left;
+    padding: 0px 30px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.gnb>li>a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.gnb>li>a:hover {
+    background-color: #ff0000;
+    /* padding: 10px; */
+    border-radius: 100px;
+}
+
+
+/*메뉴 클릭시 해당 콘텐츠가 올라오면 해당 메뉴에 적용할 서식*/
+.on {
+    background-color: #ff0000 !important;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+/*        콘텐츠 영역서식*/
+section {
+    clear: both;
+    overflow: hidden;
+    background-image: url(../img/bg.jpg);
+}
+
+section #visual {
+    width: 100%;
+    height: 510px;
+    background-image: url(../img/h_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    /*부모요소 기준*/
+}
+
+#visual img {
+    position: absolute;
+    opacity: 0;
+    /*보이지 않게 숨김*/
+}
+
+/*카피문구 이미지*/
+#visual img:first-child {
+    top: 10%;
+    right: 10%;
+    width: 610px;
+}
+
+/*자동차 사진*/
+#visual img:last-child {
+    left: 0%;
+    bottom: 20%;
+}
+
+
+/*        비주얼 박스를 제외한 나머지 콘텐츠 서식*/
+/*
+.sub_con{
+    width:940px;
+    height:740px;
+    margin:30px auto;
+    background-color:aqua;   
+}
+*/
+article.sub_con>h3 {
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 20px;
+    padding-bottom: 20px;
+}
+
+#story img {
+    margin-bottom: 10px;
+}
+
+#br_01 {
+    background-image: url(../img/bg_01.png);
+    float: left;
+}
+
+#br_02 {
+    background-image: url(../img/bg_02.png);
+    float: right;
+}
+
+#br_03 {
+    background-image: url(../img/bg_03.png);
+    float: left;
+}
+
+#br_04 {
+    background-image: url(../img/bg_04.png);
+    float: right;
+}
+
+
+
+ 
+        #product{
+            width:1200px;
+            margin:0px auto;
+        }
+        
+        
+        .wrap_img{
+            width: 890px;
+            margin: 0px auto;
+            background-color:#ccc;
+            position: relative;
+        }
+
+        .img_sub{
+            position: absolute;
+            width: 440px;
+            height: 356px;
+            background: rgba(0,0,0,.5);
+            border-radius: 7px;
+        }
+        .img_sub>p{
+            color:#fff;
+            font-size: 14px;
+        }
+
+
+        .product_wrap{
+            width:1200px;
+            margin:0px auto;
+            text-align: center;
+        }
+        
+        
+        
+/*        제품소개*/
+        article:nth-child(3){
+            width:1200px;
+            margin:0px auto;
+        }
+        
+        
+        article:nth-child(3)>img{ 
+        }
+        
+        #product{
+            width:1200px;
+            height: 800px;
+        }
+        #product li{text-align: center;}
+        
+        input[type=radio]{display: none;}
+        
+        #product label{
+            font-size: 20px;
+            padding:20px;
+            cursor: pointer;
+        }
+        
+        .almond01, .dark02, .hazelnut03, .peanut04{
+            display: none;
+        }
+        
+        
+        #almond:checked ~ .almond01{display:block;}
+        #dark:checked ~ .dark02{display:block;}
+        #hazelnut:checked ~ .hazelnut03{display:block;}
+        #peanut:checked ~ .peanut04{display:block;}
+        
+        input[type=radio]:checked + label{
+            font-weight: bold;
+            background-color:#333;
+            color:#fff;
+            border-radius: 50px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+article:not(#visual) {
+    /*article 영역*/
+    width: 1200px;
+    margin: 30px auto;
+    background-color: aqua;
+    height: 940px;
+}
+
+
+/*        푸터영역서식*/
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+}
+
+footer address {
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+
+/*        top버튼 서식*/
+footer>a {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 10px;
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+}
+
+
+
+/*헤더 내비게이션 추가 서식*/
+.act {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+
+}
+
+/*위치 수치*/
+.status {
+    background-color: #ffff00;
+    color: #f00;
+    position: fixed;
+    right: 30px;
+    top: 100px;
+    z-index: 7777;
+}

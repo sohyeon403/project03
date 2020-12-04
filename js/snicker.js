@@ -5,21 +5,21 @@ $(document).ready(function(){
     
     //비쥬얼 이미지 영역에 타이틀, 자동차 사진 보이게 하기
     const title = $('#visual img:first-child');
-    const car = $('#visual img:last-child');
+    const choco = $('#visual img:last-child');
     
-    car.animate({'left':'10%','opacity':'1'}, 500);
-    title.delay(500).animate({'right':'10%','opacity':'1'},500);
+    choco.animate({'left':'15%','opacity':'1'}, 1000);
+    title.delay(1000).animate({'right':'10%','opacity':'1'},800);
     
     
-    //내비게이션 메뉴 클릭시 해당하는 컨텐츠 top:58px위치에 올라오게 하기
+    //내비게이션 메뉴 클릭시 해당하는 컨텐츠 top:60px위치에 올라오게 하기
     
     $('.gnb > li').on({'click focus':function(){
         const num = $(this).index()+1; //2,3,4,5,6,7   0번은 비쥬얼 박스 인덱스 값이라서 필요없음.
         //li태그를 입력했을 때 몇번째 숫자가 뜨는지 콘솔창을 통해서 알 수 있음. 
         console.log(num);
         
-        var con = $('section article').eq(num).offset().top;//각 콘텐츠 article에 top위치 값을 변수에 저장.
-        $('html, body').animate({scrollTop:con-58},300); //각 콘텐츠가 스크롤 높이 58픽셀까지 상단으로 애니메이션 되면서 올라감.
+        let con = $('section article').eq(num).offset().top;//각 콘텐츠 article에 top위치 값을 변수에 저장.
+        $('html, body').animate({scrollTop:con-60},300); //각 콘텐츠가 스크롤 높이 58픽셀까지 상단으로 애니메이션 되면서 올라감.
     }
     
     

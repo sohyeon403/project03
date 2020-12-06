@@ -229,7 +229,11 @@ article.sub_con>h3 {
     line-height: 22px;
 }
 
-.history_s{position: absolute;top: 180px;}
+.history_s {
+    position: absolute;
+    top: 180px;
+}
+
 .sub01 {
     z-index: 100;
 }
@@ -311,7 +315,9 @@ input[type=radio]:checked+label {
 }
 
 
-
+#cfimg {
+    position: relative;
+}
 
 .cfimg_wrap {
     width: 1000px;
@@ -323,17 +329,43 @@ input[type=radio]:checked+label {
     padding: 15px;
 }
 
-.cfimg_wrap>p.more{
+.cfimg_wrap>p.more a {
     font-size: 20px;
-    color:#444;
+    color: #444;
     font-weight: bold;
     float: right;
-padding: 70px;
+    /* padding: 11px; */
     position: absolute;
+    top: 778px;
+    right: 176px;
+}
 
+p.more>img{
+    width: 176px;
+    position: absolute;
+    top: 652px;
+    left: 850px;
+}
+.cfimg_wrap>p.more:hover a {
+  text-decoration:underline;
 }
 
 
+#notice {
+    width: 1200px;
+    height: 300px !important;
+    margin: 0px auto;
+}
+
+#notice img {
+    width: 900px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.footer_wrap span:nth-last-child() {
+    float: right;
+}
 
 
 
@@ -357,45 +389,52 @@ footer {
     z-index: 20;
 }
 
-div.footer_wrap{
+div.footer_wrap {
     width: 1200px;
     margin: 0px auto;
     position: relative;
 }
-div.footer_wrap>img{
+
+div.footer_wrap>img {
     position: absolute;
 }
-div.footer_wrap>.f_logo{
-top: 45px;
-left: 80px;
+
+div.footer_wrap>.f_logo {
+    top: 45px;
+    left: 80px;
 }
 
-.f_box01{
+.f_box01 {
     width: 600px;
     height: 400px;
     top: 100px;
     left: 80px;
 }
-.f_box02{
+
+.f_box02 {
     width: 400px;
     top: 100px;
     right: 80px;
 }
-.our_promise{
-    top: 120px;
-    left: 100px;
+
+.our_promise {
+    top: 134px;
+    left: 108px;
 }
-.marketing{
+
+.marketing {
     top: 120px;
     right: 260px;
 }
-.t_marketing{
+
+.t_marketing {
     position: absolute;
     right: 160px !important;
-    top: 200px;
+    top: 196px;
     width: 300px;
-    color:#fff;
+    color: #fff;
 }
+
 footer address {
     position: absolute;
     color: #fff;
@@ -404,22 +443,43 @@ footer address {
     right: 80px;
 }
 
-.footer_wrap>p.promise{
+.footer_wrap>p.promise {
     width: 420px;
     z-index: 1000;
     position: absolute;
-    top: 180px;
+    top: 194px;
     left: 110px;
-    color:#fff;
-    font-size: 11px;
+    color: #fff;
 }
 
-.footer_wrap span{
+.footer_wrap span {
     font-weight: 900;
-    color:#333;
+    color: #333;
 }
 
+.footer_wrap span:hover,
+.parent:hover {
+    text-decoration: underline;
+}
 
+.parent {
+    float: right;
+}
+
+#mark01 {
+    right: 285px;
+    top: 315px;
+}
+
+#mark02 {
+    right: 286px;
+    top: 282px;
+}
+
+#mark03 {
+    right: 392px;
+    top: 282px;
+}
 
 /*        top버튼 서식*/
 footer>a {

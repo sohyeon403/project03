@@ -3,7 +3,7 @@ $(document).ready(function(){
     //탑버튼 숨기기
     $('footer a').hide();
     
-    //비쥬얼 이미지 영역에 타이틀, 자동차 사진 보이게 하기
+    //비쥬얼 이미지 영역에 타이틀, 초콜릿 사진 보이게 하기
     const title = $('#visual img:first-child');
     const choco = $('#visual img:last-child');
     
@@ -45,7 +45,7 @@ $(document).ready(function(){
         }
         
         
-//                //각 해당하는 콘텐츠가 상단으로 올라오면 해당하는 메뉴에 서식을 적용하기
+//각 해당하는 콘텐츠가 상단으로 올라오면 해당하는 메뉴에 서식을 적용하기
                if(sPos >= 500&&sPos<1400){
                    $('.gnb a').removeClass('on'); //기존에 적용된 서식이 있으면 제거하고
                    $('.gnb li:first-child a').addClass('on'); //첫번째 메뉴에 서식 적용

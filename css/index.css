@@ -75,7 +75,7 @@ nav {
 }
 
 .gnb {
-    width: 698px;
+    width: 760px;
     height: 58px;
     margin: 0px auto;
     background: #421100;
@@ -92,12 +92,13 @@ nav {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    padding: 0px 10px;
+    padding: 0px 22px;
 }
 
 .gnb>li>a:hover {
     background-color: #ff0000;
-    /* padding: 10px; */
+    /* border: 2px solid #ff0000; */
+    padding: 8px 22px !important;
     border-radius: 100px;
 }
 
@@ -105,7 +106,7 @@ nav {
 /*메뉴 클릭시 해당 콘텐츠가 올라오면 해당 메뉴에 적용할 서식*/
 .on {
     background-color: #ff0000 !important;
-    padding: 20px;
+    padding: 10px 20px !important;
     border-radius: 100px;
 }
 

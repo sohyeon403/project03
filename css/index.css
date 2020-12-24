@@ -106,7 +106,7 @@ nav {
 /*메뉴 클릭시 해당 콘텐츠가 올라오면 해당 메뉴에 적용할 서식*/
 .on {
     background-color: #ff0000 !important;
-    padding: 10px 20px !important;
+    padding: 8px 22px !important;
     border-radius: 100px;
 }
 
